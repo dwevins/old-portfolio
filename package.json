@@ -33,7 +33,7 @@
     "broccoli-stew": "^1.2.0",
     "ember-cli": "^2.6.0",
     "eslint": "^2.4.0",
-    "eslint-config-rtablada": "^2.0.0",
+    "eslint-config-rtablada": "^3.0.0",
     "loader.js": "^4.0.1",
     "sass-lint": "^1.8.1",
     "testem": "^1.5.0"
