@@ -2,16 +2,212 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>portfolio</title>
+  <title>Woody Evins</title>
   <link rel="stylesheet" href="/app.css">
 </head>
 <body>
+  <app class="app">
+    <main class="page">
+      <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title"></p>
+            <button class="delete is-info"></button>
+          </header>
+          <section class="modal-card-body">
+            <img src="" alt="" class="modal-image">
+            <p class="modal-description"></p>
+          </section>
+          <footer class="modal-card-foot">
+            <p class="button is-primary site-link">View Site</p>
+            <p class="button is-primary github-link">View Source</p>
+          </footer>
+        </div>
+      </div>
 
-  <script src="/vendor.js" charset="utf-8"></script>
-  <script src="/app.js" charset="utf-8"></script>
+      <section class="hero top-hero is-fullheight">
+        <div class="hero-overlay top-hero-overlay is-overlay">
+          <div class="hero-body top-hero-body">
+            <div class="container">
+              <h1 class="hero-title top-hero-title">woody<br>evins</h1>
+              <h2 class="hero-subtitle top-hero-subtitle">
+                &nbsp;&nbsp;front-end web developer
+              </h2>
+            </div>
+            <p class="top-hero-scroll-icon"><span class="fa fa-chevron-down down"></span></p>
+          </div>
+        </div>
+      </section>
 
-  <script type="text/javascript">
-    const index = require('index');
+      <section class="hero info-hero divider">
+        <div class="hero-body info-hero-body divider-body">
+          <div class="container">
+            <h3 class="hero-title info-hero-title divider-title">i'm woody evins</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="info content-box">
+        <div class="container">
+          <div class="info__bio box">
+            <h3 class="info__bio--heading title is-2">
+                    About Me
+                  </h3>
+            <p class="info__bio--content">
+              I’m a Middle Tennessee native, web developer, and multi-skilled IT tradesman. I specialize in building fast, functional web apps with highly intuitive user interfaces. I have a passion for learning new things, and love solving problems. My goal is to
+              improve the user experience by removing as much guesswork as possible for the end user, resulting in a fast, enjoyable web experience for everyone.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero info-hero divider">
+        <div class="hero-body info-hero-body divider-body">
+          <div class="container">
+            <h3 class="hero-title info-hero-title divider-title">my skills</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="info__skills content-box">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <div class="box">
+                <h4 class="column-title title is-5">core technologies</h4>
+                <p class="skills-list__item">JavaScript</p>
+                <p class="skills-list__item">HTML5</p>
+                <p class="skills-list__item">CSS3</p>
+                <p class="skills-list__item">CLI</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box">
+                <h4 class="column-title title is-5">tools</h4>
+                <p class="skills-list__item">Chrome Dev Tools</p>
+                <p class="skills-list__item">AdonisJs</p>
+                <p class="skills-list__item">Ember.js</p>
+                <p class="skills-list__item">Atom</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="box">
+                <h4 class="column-title title is-5">disciplines</h4>
+                <p class="skills-list__item">Front-end design/development</p>
+                <p class="skills-list__item">Test Driven Development</p>
+                <p class="skills-list__item">Responsive Web Design</p>
+                <p class="skills-list__item">Back-end development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero projects-hero divider">
+        <div class="hero-body projects-hero-body divider-body">
+          <div class="container">
+            <h3 class="hero-title projects-hero-title divider-title">selected works</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects content-box">
+        <div class="column">
+          <div class="container">
+            <div class="columns">
+              <!-- {{#each model as |project|}}
+                <img src="{{project.image}}" alt="" class="preload">
+                <div class="column">
+                  <div class="project-list__item box" {{action 'openModal' project on='click'}}>
+                    <div class="project-list__item--img-container">
+                      <img class="project-img" src='{{project.thumb}}'>
+                    </div>
+                    <div class="project-list__item--button button is-info is-one-third">
+                      more info
+                    </div>
+                  </div>
+                </div>
+              {{/each}} -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero contact-hero divider">
+        <div class="hero-body contact-hero-body divider-body">
+          <div class="container">
+            <h3 class="hero-title contact-hero-title divider-title">get in touch</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact content-box">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <div class="contact-box box has-text-centered">
+                <span class="fa fa-github"></span>
+                <p>github.com/dwevins</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="contact-box box has-text-centered">
+                <span class="fa fa-envelope"></span>
+                <p>woody.evins@gmail.com</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="contact-box box has-text-centered">
+                <span class="fa fa-phone"></span>
+                <p>(615)-478-7893</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="contact-box box has-text-centered">
+                <span class="fa fa-linkedin"></span>
+                <p>linkedin.com/in/woodyevins</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="content footer-content columns has-text-centered">
+            <div class="column">
+              <p>
+                Designed and developed by Woody Evins.
+              </p>
+            </div>
+            <div class="column">
+              <p>
+                The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php" target="_blank"><strong>MIT</strong></a>.
+                <br>The website content is licensed
+                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+                  <strong>CC ANS 4.0</strong>.
+                </a>.
+              </p>
+            </div>
+            <div class="column">
+              <p>
+                Developed with HTML, CSS, and JavaScript.<br>
+                Styled with <a href="http://bulma.io" target="_blank"><strong>Bulma</strong></a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </app>
+
+  <script src='/src/index.js'>
+    // const index = require('index');
+    // const app = document.querySelector('.app');
+    // index(app);
   </script>
 </body>
 </html>
