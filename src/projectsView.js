@@ -9,23 +9,25 @@ export default class ProjectsView {
 
   render() {
     const container = document.querySelector('.projects-columns');
-    const projectBox = document.createElement('div');
-    projectBox.className = 'column';
-    projectBox.innerHTML = `
-    <img class="preload">
-    <div class="column">
+
+
+    this.projectList.forEach((project) => {
+      const projectBox = document.createElement('div');
+      projectBox.className = 'column';
+      projectBox.innerHTML = `
+      <img class="preload">
       <div class="project-list__item box">
         <div class="project-list__item--img-container">
           <img class="project-img">
         </div>
         <div class="project-list__item--button button is-info is-one-third">
+          more info
         </div>
-      </div>
-    </div>`;
+      </div>`;
 
-
-    this.projectList.forEach((project) => {
-
+      projectBox.querySelector('.preload').setAttribute('src', project.image);
+      projectBox.querySelector('.project-img').setAttribute('src', project.thumb);
+      container.appendChild(projectBox);
     });
   }
 }
