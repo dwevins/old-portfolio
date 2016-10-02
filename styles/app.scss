@@ -1,6 +1,24 @@
-// @import 'yoga';
-// @import 'normalize';
-
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$max-content-width: 70rem;
+$min-content-width: 10rem;
+$gutter: 1rem;
+$header-height: 5rem;
+$icon-size: 3.5rem;
+$ease: ease 0.2s;
+$purple-main: #639;
+$primary: #639; //override bulma primary color
+$link: #639; //override bulma link color
+$teal-main: #65c6bb;
+$info: #65c6bb;
+$gray-main: #e3e6e8;
+$white: #fff;
+$black: #000;
+$overlay: rgba(0, 0, 0, 0.63);
+@import 'font-awesome';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Unica+One';
+@import 'node_modules/bulma/bulma';
+@import 'resets';
 @import 'box-sizing';
+@import 'page';
+@import 'media-queries';

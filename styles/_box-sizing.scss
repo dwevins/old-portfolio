@@ -6,8 +6,25 @@ html {
 * {
   box-sizing: inherit;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     box-sizing: inherit;
   }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+}
+
+.container {
+  width: calc(100% - #{$gutter});
+  max-width: $max-content-width;
+  margin: 0 auto;
+}
+
+.content-box {
+  padding: 5 * $gutter 0;
 }

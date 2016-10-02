@@ -1,0 +1,115 @@
+@keyframes downAnimation {
+  0%    {transform: translate3d(0, 0, 0)}
+  50%   {transform: translate3d(0, #{$gutter}, 0)}
+  100%  {transform: translate3d(0, 0, 0)}
+}
+
+.preload {
+  display: none;
+  position: fixed;
+}
+
+.hero {
+  font-family: 'Unica One', sans-serif;
+}
+
+.top-hero {
+  position: relative;
+  background-attachment: fixed;
+  background-image: url('assets/images/hero.jpeg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
+
+  &-body {
+    height: 100%;
+  }
+
+  &-title {
+    margin: 0;
+    color: $white;
+    font-size: 10rem;
+  }
+
+  &-subtitle {
+    margin: 0;
+    color: $gray-main;
+    font-size: 2rem;
+  }
+
+  &-scroll-icon {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - (0.5 * #{$icon-size}));
+    width: 100%;
+    color: $gray-main;
+    vertical-align: bottom;
+  }
+
+  &-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: $overlay;
+  }
+}
+
+.divider {
+  background-color: $purple-main;
+  color: $white;
+  font-size: 5rem;
+
+  &-body {
+    padding: $gutter 0;
+  }
+}
+
+.projects {
+  &-hero-subtitle {
+    font-size: 2rem;
+  }
+}
+
+.project-list {
+
+  &__item {
+    transition: background-color $ease;
+
+    &:hover {
+      background-color: $overlay;
+    }
+
+    &--button {
+      width: 100%;
+      margin-top: $gutter;
+      transition: background-color $ease;
+    }
+  }
+
+}
+
+.contact-box {
+  transition: color $ease;
+
+  &:hover {
+    color: $purple-main;
+  }
+}
+
+.footer {
+  padding: 2 * $gutter 0;
+  background-color: $teal-main;
+  color: $black;
+}
+
+.modal-description {
+  text-align: justify;
+}
+
+.down {
+  padding-bottom: $gutter;
+  font-size: $icon-size;
+
+  animation-name: downAnimation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}

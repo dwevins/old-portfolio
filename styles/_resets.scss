@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: $gray-main;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  border-bottom: 1px solid $purple-main;
+}
+
+.title {
+  font-family: 'Unica One', sans-serif;
+}
