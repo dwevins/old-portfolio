@@ -204,10 +204,14 @@
     </main>
   </app>
 
-  <script src='/src/index.js'>
-    // const index = require('index');
-    // const app = document.querySelector('.app');
-    // index(app);
+
+  <script src="/vendor.js" charset="utf-8"></script>
+  <script src="/app.js" charset="utf-8"></script>
+
+  <script>
+    const index = require('index');
+    const app = document.querySelector('.app');
+    index(app);
   </script>
 </body>
 </html>

@@ -1,9 +1,9 @@
 'use strict';
-import ProjectList from 'projectList';
+import projectsList from 'projectList';
 import ProjectsView from 'projectsView';
 
 export default function Index(app) {
-  const projectList = ProjectList();
-  const view = ProjectsView(projectList, app);
+  const projectList = projectsList();
+  const view = new ProjectsView(projectList, app);
   view.render();
 }
