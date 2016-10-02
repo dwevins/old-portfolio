@@ -18,7 +18,7 @@ export default class ProjectsView {
         container.appendChild(columns);
       }
       const project = new Project(this.projectList[i], columns);
-      project.render;
+      project.render();
     }
   }
 }
