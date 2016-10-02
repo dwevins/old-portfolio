@@ -2,11 +2,11 @@
 
 export default class Project {
   constructor(project) {
-    const name = project.name;
-    const url = project.url;
-    const github = project.github;
-    const thumb = project.thumb;
-    const image = project.image;
-    const description = project.description;
+    this.name = project.name;
+    this.url = project.url;
+    this.github = project.github;
+    this.thumb = project.thumb;
+    this.image = project.image;
+    this.description = project.description;
   }
 }
