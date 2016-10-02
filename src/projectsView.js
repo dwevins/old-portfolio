@@ -9,10 +9,11 @@ export default class ProjectsView {
 
   render() {
     const container = document.querySelector('.projects-container');
+    let columns = document.querySelector('.projects-columns');
 
     for (let i = 0; i < this.projectList.length; i++) {
       const projectBox = document.createElement('div');
-      projectBox.className = 'column';
+      projectBox.classList = 'column is-one-third';
       projectBox.innerHTML = `
         <img class="preload">
         <div class="project-list__item box">
@@ -26,7 +27,13 @@ export default class ProjectsView {
 
       projectBox.querySelector('.preload').setAttribute('src', this.projectList[i].image);
       projectBox.querySelector('.project-img').setAttribute('src', this.projectList[i].thumb);
-      container.appendChild(projectBox);
+
+      if (i > 0 && i % 3 === 0) {
+        columns = document.createElement('div');
+        columns.classList = 'columns projects-columns';
+        container.appendChild(columns);
+      }
+      columns.appendChild(projectBox);
     }
   }
 }
