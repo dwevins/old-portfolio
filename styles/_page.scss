@@ -40,8 +40,9 @@
   &-scroll-icon {
     position: absolute;
     bottom: 0;
-    left: calc(50% - (0.5 * #{$icon-size}));
-    width: 100%;
+    left: calc(50% - (#{$icon-size} / 2));
+    justify-content: center;
+    width: auto;
     color: $gray-main;
     vertical-align: bottom;
   }
