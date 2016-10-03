@@ -105,8 +105,15 @@
   color: $black;
 }
 
-.modal-description {
-  text-align: justify;
+.modal {
+  &-card-body {
+    flex-grow: 1;
+  }
+
+  &-description {
+    flex-grow: 1;
+    text-align: justify;
+  }
 }
 
 .down {

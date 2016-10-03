@@ -36,7 +36,7 @@ export default class Project {
     this.projectBox.querySelector('.preload').setAttribute('src', this.image);
     this.projectBox.querySelector('.project-img').setAttribute('src', this.thumb);
 
-    this.projectBox.querySelector('.button').addEventListener('click', () => {
+    this.projectBox.querySelector('.box').addEventListener('click', () => {
       this.openModal();
     });
   }
