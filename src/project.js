@@ -44,20 +44,19 @@ export default class Project {
   openModal() {
     const modal = document.querySelector('.modal');
     modal.classList.add('is-active');
+
     modal.querySelector('.modal-card-title').innerText = this.name;
     modal.querySelector('.modal-image').setAttribute('src', this.image);
     modal.querySelector('.modal-description').innerText = this.description;
 
+    modal.querySelector('.site-link').setAttribute('href', this.url);
+    modal.querySelector('.site-link').setAttribute('target', '_blank');
+
+    modal.querySelector('.github-link').setAttribute('href', this.github);
+    modal.querySelector('.github-link').setAttribute('target', '_blank');
+
     modal.querySelector('.delete').addEventListener('click', () => {
       modal.classList.remove('is-active');
-    });
-
-    modal.querySelector('.site-link').addEventListener('click', () => {
-      window.open(this.url, '_blank');
-    });
-
-    modal.querySelector('.github-link').addEventListener('click', () => {
-      window.open(this.github, '_blank');
     });
   }
 }
